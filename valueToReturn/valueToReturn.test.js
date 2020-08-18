@@ -1,4 +1,4 @@
-import {foo} from './valueToReturn'
+import {valueToReturn} from './valueToReturn'
 describe('valueToReturn', () => {
   it('should return 0 if price === amount given', () => {
     expect(valueToReturn(5, 5)).toEqual(0)
