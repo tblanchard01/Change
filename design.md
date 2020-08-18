@@ -1,4 +1,4 @@
-fn valueToReturn(price, amount) => 0.5
+fn valueToReturn(price, amount) => 0.5 - done 
 fn coinsToReturn(amount) => {0.5:1}
 fn ChangeCalculator = (price, amount) => {1: 2, 0.5: 7}  
 

@@ -4,7 +4,7 @@ describe('valueToReturn', () => {
     expect(valueToReturn(5, 5)).toEqual(0)
   });
 
-  it('should return 0 if price > amount given', () => {
+  it.only('should return 0 if price > amount given', () => {
     expect(valueToReturn(6, 5)).toEqual(0)
   });
 
