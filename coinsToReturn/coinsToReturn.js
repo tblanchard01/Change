@@ -5,10 +5,9 @@ export const coinsToReturn = (value) => {
 
   while (value > 0) {
     const coin = findNextCoin(value);
-    counter[coin] ? counter[coin]++ : counter[coin] = 1;
+    counter[coin] ? counter[coin]++ : (counter[coin] = 1);
     value = (value - coin).toFixed(2);
   }
 
   return counter;
 };
-
