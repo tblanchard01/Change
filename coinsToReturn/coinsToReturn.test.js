@@ -1,6 +1,5 @@
 import {coinsToReturn} from './coinsToReturn';
 
-
 describe('coinsToReturn', () => {
   it('should return 0 if change to give is 0 ', () => {
     expect(coinsToReturn(0)).toEqual({});
@@ -22,7 +21,16 @@ describe('coinsToReturn', () => {
   });
   it('should return expected change for £77.77 change', () => {
     // eslint-disable-next-line max-len
-    const expected = {50: 1, 20: 1, 5: 1, 2: 1, 0.5: 1, 0.2: 1, 0.05: 1, 0.02: 1};
+    const expected = {
+      50: 1,
+      20: 1,
+      5: 1,
+      2: 1,
+      0.5: 1,
+      0.2: 1,
+      0.05: 1,
+      0.02: 1,
+    };
     expect(coinsToReturn(77.77)).toEqual(expected);
   });
 });

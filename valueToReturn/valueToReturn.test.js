@@ -13,6 +13,6 @@ describe('valueToReturn', () => {
   });
 
   it('should handle decimals correctly', () => {
-    expect(valueToReturn(5.60, 6.25)).toEqual(0.65);
+    expect(valueToReturn(5.6, 6.25)).toEqual(0.65);
   });
 });
