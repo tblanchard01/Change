@@ -8,4 +8,8 @@ describe('findnextcoin', () => {
     expect(findNextCoin(1)).toEqual(1)
   });
 
+  it('finds next coin for £0.50 change', () => {
+    expect(findNextCoin(0.5)).toEqual(0.5)
+  });
+
 });
