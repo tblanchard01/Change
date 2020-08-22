@@ -1,2 +1,3 @@
-export const valueToReturn = (price, amount) => price === amount || price > amount ? 0 : Number((amount-price).toFixed(2))
-  
+export const valueToReturn = (price, amount) => {
+  return price >= amount ? 0 : Number((amount-price).toFixed(2));
+};

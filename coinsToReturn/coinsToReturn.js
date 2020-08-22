@@ -1,15 +1,14 @@
-import {findNextCoin} from '../findNextCoin/findNextCoin'
+import {findNextCoin} from '../findNextCoin/findNextCoin';
 
-export const coinsToReturn = value => {
-  
-  let coinsCounter = {};
+export const coinsToReturn = (value) => {
+  const counter = {};
 
   while (value > 0) {
-    const nextCoin = findNextCoin(value)
-    coinsCounter[nextCoin] ? coinsCounter[nextCoin]++ : coinsCounter[nextCoin] = 1
-    value = (value - nextCoin).toFixed(2)
+    const coin = findNextCoin(value);
+    counter[coin] ? counter[coin]++ : counter[coin] = 1;
+    value = (value - coin).toFixed(2);
   }
 
-  return coinsCounter
-}
+  return counter;
+};
 
