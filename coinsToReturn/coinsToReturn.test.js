@@ -20,7 +20,6 @@ describe('coinsToReturn', () => {
     expect(coinsToReturn(16.75)).toEqual(expected);
   });
   it('should return expected change for £77.77 change', () => {
-    // eslint-disable-next-line max-len
     const expected = {
       50: 1,
       20: 1,
